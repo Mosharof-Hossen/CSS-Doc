@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:burlywood;
+        }
+        .header{
+            text-align: center;
+            background-color: rgb(248, 117, 70);
+            padding: 2px;
+            color: white;
+        }
+       
+       
+        .nav-menu{
+            width: 100%;
+            height: max-content;
+        }
+        .nav-menu a{
+            padding: 10px;
+            border: solid 2px black;
+            margin: 10px 0px;
+            background-color: coral;
+            text-align: center;
+        }
+
+        
+        .row >div{
+            padding: 10px;
+        }
+        
+        .nav-menu{
+            background-color: cadetblue;
+            display: grid;
+            grid-template-rows: auto ;
+            height: max-content;
+            text-align: center;
+        }
+        .main{
+            background-color: rgb(34, 103, 105);
+        }
+        .aside{
+            background-color: cadetblue;
+            
+        }
+        .aside h3{
+            text-align: center;
+        }
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            border: 2px solid black;
+            height: max-content;
+            background-color: coral;
+            display: block;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /*For mobile*/
+        [class*="col-"]{
+            width: 100%;
+
+        }
+        [class*="col-"]{
+            float: left;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /*For tablet*/
+        @media screen and (min-width:600px) {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+        /*For Desktop*/
+        @media screen and (min-width:768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mosharof Hossen</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2 col-s-3">
+            <a href="#">Home</a>
+            <a href="#">Turorial</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="main col-7 col-s-9">
+            <h1>I am a web designer</h1>
+            <p>Dolores amet amet diam aliquyam sed diam diam sea, rebum nonumy sea duo amet sit. Lorem clita clita dolores at.</p>
+            <p>Dolore voluptua ipsum et duo sit sea dolores. Sadipscing sed duo aliquyam stet lorem diam diam invidunt ipsum. Sit et eos dolor accusam erat, ipsum justo ipsum stet stet kasd et takimata takimata diam, sit eos accusam voluptua stet justo sit, ut magna sit et ut et sit. Amet elitr invidunt duo magna sed erat nonumy. Magna amet erat duo dolores sit tempor sit ipsum. Gubergren lorem et erat sanctus et, clita elitr diam magna elitr tempor. Magna nonumy sed invidunt voluptua kasd duo. Invidunt elitr at sit eos. Elitr eos consetetur amet amet erat. Dolores sit sanctus ut et. Et ipsum stet clita ut, voluptua ut sanctus invidunt elitr sea lorem diam justo. Aliquyam at diam sea kasd dolores amet dolores takimata sed, ea dolor nonumy sed sed et. Accusam ea kasd ipsum ipsum aliquyam diam ea sit eirmod, eirmod ut lorem et stet. Dolore magna est lorem et,.</p>
+        </div>
+        <div class="aside col-3 col-s-12">
+            <h3>what i love?</h3>
+            <p>Vero ea accusam voluptua accusam sed erat, kasd sadipscing sadipscing et lorem amet aliquyam elitr,.</p>
+            <h3>What I Do?</h3>
+            <p>Vero ea accusam voluptua accusam sed erat, kasd sadipscing sadipscing et lorem amet aliquyam elitr,.</p>
+            <h3>What I dont love?</h3>
+            <p>Vero ea accusam voluptua accusam sed erat, kasd sadipscing sadipscing et lorem amet aliquyam elitr,.</p>
+            <h3>What I dont Do?</h3>
+            <p>Vero ea accusam voluptua accusam sed erat, kasd sadipscing sadipscing et lorem amet aliquyam elitr,.</p>
+        
+        </div>
+    </div>
+    <div class="footer">
+        &copy; study with Mosharof 2020 Developed By Mosharof Hossen
+    </div>
+</body>
+</html>

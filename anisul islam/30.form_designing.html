@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form designing</title>
+    <style>
+        input[type = text]{
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin: 20px 0px;
+            border: 3px solid salmon;
+            box-sizing: border-box;
+        }
+        #search{
+            background-image: url("search.png");
+            background-repeat: no-repeat;
+            padding: 10px 30px;
+            background-position: 8px 20px;
+            size: 15px;
+            width: 200px;
+            transition: width .3s ease-in-out;
+        }
+        #search:focus{
+            background-color: aqua;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <input type="text" name="search" id="search" placeholder="search">
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname">
+
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass">
+    </form>
+</body>
+</html>

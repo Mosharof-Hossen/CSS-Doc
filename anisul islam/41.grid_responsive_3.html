@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid part 3</title>
+    <style>
+        body{
+            margin: 10px;
+        }
+        .container{
+            background-color: blueviolet;
+            padding: 5px 20px;
+            
+        }
+        .header{
+            border: 2px solid black;
+            background-color: rosybrown;
+            height: 75px;
+            box-sizing: border-box;
+            padding: 20px 30px;
+        }
+        .acting{
+            border: black 2px solid ;
+            background-color: rosybrown; 
+        }
+        .acting-body{
+            display: grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .'
+            ;
+            border: 2px solid black;
+            margin: 10px 20px;
+            background-color: blanchedalmond;
+        }
+        .acting-body>div{
+            border: black solid 2px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .footer-body{
+            border: 2px solid black;
+            background-color: burlywood;
+            display: grid;
+            grid-template-areas: 
+            'n1 n2'
+            ;
+            max-width: 100%;
+        }
+        .footer-body>div{
+            border: black solid 2px;
+            padding: 10px;
+            text-align: center;
+        }
+        .niv1{grid-area: n1;}
+        .niv2{grid-area: n2;}
+        .sec1{grid-area: s1;}
+        .sec2{grid-area: s2;}
+        .sec3{grid-area: s3;}
+        .aside1{grid-area: a1;}
+        .aside2{grid-area: a2;}
+        @media screen and (max-width: 600px) {
+            .footer-body{
+                grid-template-areas: 
+                'n1'
+                'n2';
+            }
+            .acting-body{
+                grid-template-areas: 
+                's1'
+                's2'
+                's3' 
+                'a1'
+                'a2';
+            }
+        }
+        .sec1 ,.sec2,.sec3{background-color: chocolate;}
+        .aside1,.aside2{background-color:blue ;}
+    </style>
+</head>
+<body>
+    <p>container</p>
+    <div class="container">
+        <p>Header</p>
+        <div class="header">Header box</div>
+
+        <p>main</p>
+        <div class="acting">
+            <p>acting</p>
+            <div class="acting-body">
+                <div class="sec1">sec1</div>
+                <div class="sec2">sec2</div>
+                <div class="sec3">sec3</div>
+                <div class="aside1">aside 1</div>
+                <div class="aside2">aside 2</div>
+            </div>
+        </div>
+        <p>Footer</p>
+        <div class="footer-body">
+            <div class="niv1">sec1</div>
+            <div class="niv2">sec2</div>
+        </div>
+        <p>&copy;Mosharof_Hossen</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow and tooltip</title>
+    <style>
+        div{
+            height: 200px;
+            width: 250px;
+            background-color: coral;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        .tooltip-text{
+            
+            width: 150px;
+            height: 40px;
+            border: black solid 2px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: burlywood;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a class="tooltip" href="#">Facebook 
+        <span class="tooltip-text">Facebook is a social media</span></a>
+    <br><br>
+    <div>Sit et nonumy eos labore ipsum, ipsum eirmod erat kasd rebum consetetur eirmod et. Sit duo magna sea ipsum eirmod voluptua sea vero sit, consetetur clita nonumy takimata justo. Elitr dolor sadipscing elitr at, sit sed erat dolores rebum. Ea est ut justo diam. Consetetur sit dolor ipsum sea erat eirmod vero takimata aliquyam, sit accusam sit ipsum sanctus diam stet labore sea. Et lorem justo sit et magna tempor eirmod no. Sadipscing voluptua lorem justo kasd lorem diam lorem kasd. Et ut amet clita elitr eos labore ut, dolores eos justo diam ipsum diam clita labore diam invidunt, sit dolor aliquyam rebum amet kasd lorem erat, sed ea sea amet ea ut ipsum lorem. Justo clita invidunt sanctus eirmod eirmod, aliquyam ut sed magna accusam lorem ea at rebum, lorem sit et lorem takimata amet lorem no sed. Duo ipsum stet rebum et ipsum at sit accusam dolor. Ipsum clita sanctus diam consetetur. Sed consetetur sadipscing accusam et sanctus sit sanctus. Sed justo stet ea et stet amet sit. Gubergren labore tempor sea nonumy erat. Tempor eos sit tempor gubergren dolor sit dolore vero rebum, et clita amet vero est dolor gubergren amet. Lorem elitr nonumy et gubergren sit.
+
+        Sanctus ut sadipscing lorem aliquyam consetetur takimata clita sea. Erat dolor accusam amet consetetur nonumy ut ipsum tempor ut, accusam kasd lorem ea at ipsum diam erat amet eos, sit diam dolores elitr sanctus ipsum dolores et gubergren, invidunt no lorem sed ipsum eirmod. Gubergren vero sadipscing sea et, gubergren.
+    </div>
+</body>
+</html>

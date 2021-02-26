@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:gray;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1000px;
+    background-color: wheat;
+    margin:0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.image_profile{
+    width: 100px;
+    height: 100px;
+    border: honeydew solid 2px;
+    border-radius: 25%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+.header-bio{
+    float: left;
+    margin-top: 25px;
+    margin-left: 4px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    color: green;
+}
+.contact{
+    float: right;
+    margin: 15px;
+}
+.contact a{
+    text-decoration: none;
+    color: teal;
+    font-weight: bold;
+}
+.contact a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+.div-clear{
+    clear: both;
+}
+hr{
+    border: 3px solid black;
+    width: 100%;
+    margin: 10px auto;
+    border-bottom: none;
+}
+/*,,,,,,,,,,,,,,,,,
+personal section
+,,,,,,,,,,,,,,,*/
+.content{
+
+}
+.left-div{
+    width: 30%;
+    float: left;
+    
+}
+.right-div{
+    width: 70%;
+    float: left;
+}
+.edu-temp-left{
+    width: 33.3%;
+    float: left;
+}
+.edu-temp-right{
+    width: 33.3%;
+    float: left;
+}
+.edu-temp-school{
+    width: 33.3%;
+    float: left;
+}
+.common-hr{
+    border: 1px solid black;
+}
+.foot{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+.foot a{
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    border: wheat solid 1px;
+    background-color: wheat;
+}
+.foot p{
+    color: white;
+    margin-top: 20px;
+}
+.foot a:hover{
+    color: brown;
+    text-decoration: underline;
+}

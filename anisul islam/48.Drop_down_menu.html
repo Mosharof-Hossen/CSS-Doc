@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down menu</title>
+    <style>
+        
+        .menu{
+            background-color: rgb(70, 170, 170);
+            text-align: center;
+            color: white;
+            padding: 10px;
+            
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            padding:10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            
+        }
+        .contact{
+            display: inline;
+            position: relative;
+            
+        }
+        .about{
+            position: absolute;
+            top: 28px;
+            right: 0px;
+            background-color:rgb(70, 170, 170) ;
+            padding: 5px 10px;
+            display: none;
+
+        }
+        .about a{
+            display: block;
+            
+        }
+        .contact:hover .about{
+            display: block;
+        }
+        a:hover{
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Turorial</a>
+        <div class="contact">
+            <a  href="#">Contact Me</a>
+            <div class="about">
+                <a href="#">Facebook</a>
+                <a href="#">youtube</a>
+                <a href="#">Phone</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <a href="#">About Me</a>
+    </div>
+</body>
+</html>
